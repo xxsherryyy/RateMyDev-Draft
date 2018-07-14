@@ -16,3 +16,4 @@ sherry - Repo Owner, full-stack
 
 david - architecting, UX, front-end and/or powerpoint presentation
 
+![alt text](https://raw.githubusercontent.com/xxsherryyy/RateMyDev/blob/master/image.png)
