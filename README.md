@@ -10,7 +10,7 @@ hasan - REACT and mongo, full-stack
 
 paul - mongo, full-stack
 
-elaulas - back end, Sequelize 
+elaulas - back end mongo
 
 sherry - Repo Owner, full-stack
 
