@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dev</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Hiring</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Search</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+  <body>
+    
+    <h1>HOW IT WORKS</h1>
+    <h2>Score yourself 1 to 5 on how strong a developer you are with regard to each specific skill. Use the following scale:</h2>
+    <h2>0		1		2		3		4		5</h2>
+    
+    <br>
+
+   <h4>
+    0 = (default) declined to answer / don’t use at all
+    <br>
+    1 = exposure to this technology
+    <br>
+    2 = could effectively perform a Junior.-level job using this technology
+    <br>
+    3 = could effectively perform a Mid-level job using this technology
+    <br>
+    4 = could effectively perform a Senior-level job using this technology
+    <br>
+    5 = absolute rockstar, could effectively teach a class at a university about this technology
+    <br>
+    </h4>
+
+    <br>
+    <br>
+
+    <div class="survey-scale" id="survey">
+        <h2>Technical Skills</h2>
+        <div class = "survey-tech-list" id = "survey-tech-list"></div>
+        <div class = "survey-soft-list" id = "survey-soft-list"></div>
+        <div class = "survey-rate" id = "survey-rate"></div>
+    </div>
+      
+<button type="submit" form="profile" value="Submit">Submit</button>
+<script>document.getElementById("myForm").submit();</script>
+
+  </body>
+</html>
