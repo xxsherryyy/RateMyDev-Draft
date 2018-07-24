@@ -1,0 +1,270 @@
+/* body {
+    background-image: url('../images/index/ocean1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+} */
+
+/* ------------------------------------------------------------------ */
+/* Navbar Styles
+/* ------------------------------------------------------------------ */
+
+nav.navbar {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
+    font-size: 130%;
+    /* margin-bottom: 50px; */
+    font-weight: bold;
+}
+
+a.nav-link {
+    margin-left: 10px;
+    color: white
+}
+
+a.nav-link:hover { 
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    font-size: 125%;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Header Styles
+/* ------------------------------------------------------------------ */
+
+header {
+    /* position: relative;
+    height: 93vh; 
+    min-height: 500px;
+    width: 100%;
+    background: linear-gradient(
+     rgba(255, 255, 255, 0.00),
+     rgba(255, 255, 255, 0.30)
+   ),   url(../images/index/ocean1.jpg) no-repeat top center;
+    background-size: cover !important;
+     -webkit-background-size: cover !important;
+    text-align: center;
+    overflow: hidden; */
+
+    background-color: gray;
+    text-align: center;
+    height: 93vh;
+    position: relative;
+    border-bottom: 2px solid black;
+
+    overflow: scroll;
+}
+
+header .btn {
+    padding: 35px;
+    font-size: 135%;
+    margin-bottom: 30px;
+    border-radius: 25px;
+
+}
+
+.indexButtons {
+    margin-top: 85px;
+}
+
+/* .devSignupButton {
+    padding: 50px;
+    font-size: 30px;
+    border-radius: 25px;
+}
+
+.devSearchButton {
+    padding: 50px;
+    font-size: 30px;
+    border-radius: 25px;
+} */
+ 
+.responsive-headline {
+    margin-top: 100px;
+}
+
+ /* scrolldown link */
+header .scrolldown a {
+    color: #fff;
+    display: block;
+    height: 42px;
+    width: 42px;
+    font-size: 42px;
+    line-height: 42px;
+    color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    /* bottom: 10px; */
+    left: 50%;
+    margin-left: -30px;
+}
+
+header .scrolldown a:hover { color: #11ABB0; }
+
+
+/* ------------------------------------------------------------------ */
+/* Parallax Scrolling Section
+/* ------------------------------------------------------------------ */
+
+
+.pimg1 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* fixed = parallax
+    scroll = normal */
+    background-attachment: fixed;
+}
+
+.pimg2 {
+    position: relative;
+    /* opacity: 0.70; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* fixed = parallax
+    scroll = normal */
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url("../images/index/achievement-agreement-arms-1068523.jpg");
+    min-height: 500px;
+}
+
+.pimg2 {
+    background-image: url("../images/index/ai-close-up-code-160107.jpg");
+    min-height: 400px;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* About Section
+/* ------------------------------------------------------------------ */
+
+#aboutPicture {
+    border-radius: 20px;
+}
+  
+#about {
+    background-color: #f4f4f4;
+    padding-top: 66px;
+    padding-bottom: 66px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 150%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black
+}
+  
+#about h2 {
+    font: 50px/60px 'opensans-bold', sans-serif;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+#about p {
+    line-height: 30px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Footer Styles
+/* ------------------------------------------------------------------ */
+
+footer {
+    padding-top: 48px;
+    padding-bottom: 20px;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-top: 2px solid black
+}
+
+.fa-github:before {
+    color: black
+}
+ 
+footer a, footer a:visited { color: #525252; }
+footer a:hover, footer a:focus { color: #fff; }
+ 
+/* copyright */
+footer .copyright {
+    margin: 0;
+    padding: 0;
+}
+
+footer .copyright li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+
+.ie footer .copyright li {
+    display: inline;
+}
+
+footer .copyright li:before {
+    content: "\2022";
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+footer .copyright  li:first-child:before {
+    display: none;
+}
+ 
+/* social links */
+footer .social-links {
+    margin: 18px 0 30px 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+footer .social-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
+    color: #F06000;
+}
+ 
+footer .social-links li:first-child { margin-left: 0; }
+ 
+/* Go To Top Button */
+#go-top {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+#go-top a {
+    text-decoration: none;
+    border: 0 none;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #525252;
+    color: #fff;
+    font-size: 21px;
+    line-height: 60px;
+    border-radius: 100%;
+}
+
+#go-top a:hover { background-color: #0F9095; }

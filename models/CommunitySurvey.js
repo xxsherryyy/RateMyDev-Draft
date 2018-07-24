@@ -19,7 +19,7 @@ var communitySchema = new Schema({
         points: Number //Decimal??
   }],
   communitySurvey: [{ // DOES need its own schema
-        userId: ObjectID('sakfjasklj324kjlkjdsfHASAN'),
+        userId: ObjectID(), //will this keep track of who is reviewing properly?
         skillTag: String,
         points: Number
   }]

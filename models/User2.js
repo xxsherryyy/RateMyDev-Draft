@@ -55,7 +55,7 @@ var userSchema = new Schema({
 
   selfSurvey: [
     {
-        userId: Schema.Types.ObjectId, //is this necessary here if it's you that's logged in?
+        //userId: //ObjectID('sakfjasklj324kjlkjdsfDAVID'), Schema.Types.ObjectId //is this necessary here if it's you that's logged in?
         tag: String,
         points: Number
     }]

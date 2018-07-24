@@ -19,7 +19,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
     <title>React App</title>
   </head>
   <body>
@@ -28,30 +30,133 @@
     </noscript>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+      <a class="navbar-brand" href="#"><i class="fas fa-laptop"></i>  Rate That Dev</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#"><i class="fas fa-home"></i>  Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#"><i class="far fa-question-circle"></i>  About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#"><i class="fas fa-user"></i>  Profile</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#">Hiring</a>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="#"><i class="fas fa-users"></i>  Search</a>
           </li>
         </ul>
       </div>
     </nav>
 
+    <!-- Header
+    ================================================== -->
+    <header id="home">
+      <div class="container">
 
+    
+        <div class="row">
+          <div class="col-md-12">
+              <h1 class="responsive-headline">Rate That Dev!</h1>
+              <br>
+              <br>
+              <h2 class="col-md-8 offset-md-2">Connect with developers around the world....find one with the skills you need....</h2>
+          </div>
+        </div>
+
+        <!-- <div class="row indexButtons">
+          <div class="col-md-3 offset-md-3">
+            <button type="button" class="btn btn-primary devSignupButton">Developer Signup</button>
+          </div>
+
+          <div class="col-md-3">
+              <button type="button" class="btn btn-primary devSearchButton">Developer Search</button>
+            </div>
+        </div> -->
+
+        <div class="row indexButtons">
+          <div class="col-md-3 offset-md-3">
+              <button type="button" class="btn btn-primary col-md-12">Developer Signup</button>
+              
+          </div>
+          <div class="col-md-3">
+              <button type="button" class="btn btn-primary col-md-12">Developer Search</button>
+          </div>
+        </div>
+
+        <div id="goToAbout">
+          <p class="scrolldown">
+            <a class="smoothscroll" href="#about"><i class="fas fa-chevron-down"></i></a>
+          </p>
+        </div>
+            
+        
+      </div>  
+        
+
+    </header> <!-- Header End -->
+
+    <!-- Parallax Scrolling Section 1 -->
+    <div class="pimg1">
+    </div>
+
+    <!-- About Section
+    ================================================== -->
+    <section id="about">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h2>About</h2>
+
+            <p>
+              There is not enough time in the world to learn all the programming languages and framworks - all developers have certain areas of strength. 
+              Likewise, all developers have certain areas of weakness or inexperience - the following survey will let you score yourself and then score your developer peers whom you know well. 
+            </p>
+            <p>
+              Hiring managers or CTOs can pick their perfect shortlist of candidates from our results - in other words find you for your dream job!
+            </p>
+
+        </div> 
+      </div>
+    </section> <!-- About Section End-->
+
+
+    <!-- Parallax Scrolling Section 2 -->
+    <div class="pimg2">
+    </div>
+
+    <footer>
+      <div class="row">
+         <div class="col-md-12">
+            <ul class="social-links">
+               <li><a href="#"><i class="fab fa-github"></i></a></li>
+               <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+            </ul>
+            <ul class="copyright">
+               <li>&copy; Copyright 2018 Elaulas Cristiano, David Daniels, Hasan Mustafa, Paul Rose, Sherry Yang</li>
+               <!-- <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>    -->
+            </ul>
+         </div>
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#navbar"><i class="fas fa-chevron-up"></i></a></div>
+      </div>
+   </footer> 
+
+    <!-- <video autoplay="" preload="auto" muted="true" loop="" class="fillWidth fadeIn animated" style="    
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;">
+      <source src="./images/index/Empire.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video> -->
 
 
 
@@ -66,5 +171,10 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  
+  
   </body>
 </html>
