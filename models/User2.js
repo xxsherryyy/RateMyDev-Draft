@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 // Create the User/dev with our schema class
-var userSchema = new Schema([{
+var userSchema = new Schema({
   // firstName, a string, must be entered
   firstName: {
     type: String,
@@ -53,21 +53,13 @@ var userSchema = new Schema([{
     type: String
   },
 
-  selfSurvey: [{
-        userId: ObjectID('sakfjasklj324kjlkjdsfDAVID'), //is this necessary here if it's you that's logged in?
+  selfSurvey: [
+    {
+        userId: Schema.Types.ObjectId, //is this necessary here if it's you that's logged in?
         tag: String,
         points: Number
-    }],
-  averageRating: {
-        tag: String, //new object pushed with recalculated values 
-        points: Number //Decimal??
-  },
-  communitySurvey: [{ // DOES need its own schema
-        userId: ObjectID('sakfjasklj324kjlkjdsfHASAN'),
-        skillTag: String,
-        points: Number
-  }],
-}]);
+    }]
+});
 
 // Create the User model using the userSchema
 var User = mongoose.model("User", userSchema);
