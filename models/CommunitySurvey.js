@@ -19,7 +19,10 @@ var communitySchema = new Schema({
         points: Number //Decimal??
   }],
   communitySurvey: [{ // DOES need its own schema
-        userId: ObjectID(), //will this keep track of who is reviewing properly?
+        userId: {
+          type: Schema.Types.ObjectId,
+	        ref: "communi"
+        }, //will this keep track of who is reviewing properly?
         skillTag: String,
         points: Number
   }]

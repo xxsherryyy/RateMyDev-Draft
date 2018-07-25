@@ -2,12 +2,16 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require("mongoose");
-const passport = require('passport');
-const expressSession = require('express-session');
+// const passport = require('passport');
+// const expressSession = require('express-session');
 const PORT = process.env.PORT || 3000;
 
 // Express server
 const app = express();
+
+const users = require('./routes/api/users');
+const profile = require('./routes/api/profile');
+const communitySurvey = require('./routes/api/communitySurvey');
 
 // const logger = require("morgan");
 // const path = require("path");
@@ -21,7 +25,7 @@ app.use(bodyParser.json());
 // Serve up static assets
 app.use(express.static("client/build"));
 // Add routes, both API and view
-app.use(routes);
+// app.use(routes);
 
 
 // Use morgan logger for logging requests
@@ -36,6 +40,9 @@ app.use(routes);
 // db.once("open", function() {
 //     console.log("Mongoose connection successful");
 // });
+
+var db = mongoose.connection;
+
 
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
@@ -53,9 +60,9 @@ mongoose.connect(MONGODB_URI);
 
 
 // Connect routes
-
-
-// var db = mongoose.connection;
+app.use('api/users', users);
+app.use('api/profile', profile);
+app.use('api/communitySurvey', communitySurvey);
 
 // Start the server
 app.listen(PORT, function() {

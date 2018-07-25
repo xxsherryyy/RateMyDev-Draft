@@ -1,0 +1,14 @@
+.userProfilePicContainer {
+    text-align: center;
+    /* border-radius: 50px; */
+    margin-bottom: 25px;
+}
+
+.userProfilePic {
+    border-radius: 100%;
+    border: 2px solid gray;
+}
+
+.sumbitButtonContainer {
+    text-align: center
+}
