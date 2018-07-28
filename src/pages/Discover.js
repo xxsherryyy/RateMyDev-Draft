@@ -52,16 +52,16 @@ class Discover extends Component {
   render() {
     return (
       <div>
-        <h1 className="text-center">Make New Friends</h1>
+        <h1 className="text-center">Self Survey</h1>
         <h3 className="text-center">
-          Thumbs up on any pups you'd like to meet!
+          Rate your Technical and Soft Skills!
         </h3>
         <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
         <h1 className="text-center">
-          Made friends with {this.state.matchCount} pups so far!
+          You've rated {this.state.matchCount} skills so far!
         </h1>
         <Alert style={{ opacity: this.state.match ? 1 : 0 }} type="success">
-          Yay! That Pup Liked You Too!!!
+          Thanks for finishing your survey! Now click Search to rate one of your peers!
         </Alert>
       </div>
     );
