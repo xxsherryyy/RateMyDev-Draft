@@ -28,7 +28,7 @@ const About = () => (
 
           </p>
           <p>
-            I'm a Developer || I'm Hiring
+            <button>I'm a Developer</button> || <button>I'm Hiring</button>
           </p>
           
         </Col>
