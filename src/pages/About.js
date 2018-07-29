@@ -13,7 +13,7 @@ const About = () => (
     <Container style={{ marginTop: 30 }}>
       <Row>
         <Col size="md-12">
-          <h1>Rate That Dev</h1>
+          {/* <h1>Rate That Dev</h1> */}
         </Col>
       </Row>
       <Row>
