@@ -8,6 +8,8 @@ import '../App.css';
 const About = () => (
   <div>
     <Hero backgroundImage="https://png.pngtree.com/thumb_back/fw800/back_pic/00/08/57/41562ad4a92b16a.jpg">
+    {/* <Hero backgroundImage="https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif"> */}
+    
       <h1>Rate That Dev</h1>
       <h2>the best place to find the perfect developer</h2>
     </Hero>
