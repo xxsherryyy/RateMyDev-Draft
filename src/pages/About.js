@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import '../App.css';
 
 const About = () => (
   <div>
@@ -28,7 +29,7 @@ const About = () => (
 
           </p>
           <p>
-            <button>I'm a Developer</button> || <button>I'm Hiring</button>
+          <a href="/discover"><button>I'm a Developer</button></a> ||  <a href="/search"><button>I'm Hiring</button></a>
           </p>
           
         </Col>
