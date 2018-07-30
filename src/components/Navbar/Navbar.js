@@ -8,7 +8,11 @@ const Navbar = props => (
     <Link className="navbar-brand" to="/">
       RATE THAT DEV
     </Link>
-    <div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    {/* <div> */}
       <ul className="navbar-nav">
         <li
           className={
@@ -29,7 +33,7 @@ const Navbar = props => (
               : "nav-item"
           }
         >
-          <Link to="/" className="nav-link">
+          <Link to="/home" className="nav-link">
             About
           </Link>
         </li>
@@ -53,6 +57,17 @@ const Navbar = props => (
         >
           <Link to="/search" className="nav-link">
             Search Devs
+          </Link>
+        </li>
+        <li
+          className={
+            window.location.pathname === "/premium"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/search" className="nav-link disabled">
+            Premium
           </Link>
         </li>
       </ul>
